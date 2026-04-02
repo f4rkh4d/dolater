@@ -1,0 +1,29 @@
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# venv
+.venv/
+venv/
+env/
+
+# tooling
+.mypy_cache/
+.ruff_cache/
+.tox/
+
+# dolater state
+.dolater/
+
+# editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
