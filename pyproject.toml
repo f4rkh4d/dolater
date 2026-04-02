@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dolater"
+version = "0.2.1"
+description = "brutalist todo list. three slots max. finish or drop."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [{ name = "farkhad", email = "bennett@frkhd.com" }]
+keywords = ["todo", "cli", "productivity"]
+classifiers = [
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "click>=8.1",
+    "rich>=13.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+dolater = "dolater.cli:main"
+
+[project.urls]
+Homepage = "https://frkhd.com/dolater"
+Source = "https://github.com/f4rkh4d/dolater"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dolater"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
