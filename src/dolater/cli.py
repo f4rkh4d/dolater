@@ -13,7 +13,7 @@ def _conn():
     return store.connect(store.default_db_path())
 
 
-@click.group(help="dolater — three slots. finish or drop.")
+@click.group(help="dolater: three slots. finish or drop.")
 @click.version_option(__version__, prog_name="dolater")
 def main() -> None:
     pass
