@@ -1,5 +1,7 @@
 # dolater
 
+
+![demo](docs/hero.gif)
 three slots. that's the whole tool.
 
 a command-line todo list that refuses a fourth item. if the list is full you have to finish one or drop one before adding anything else. no backlog, no "maybe next week" bucket, no snooze. the friction is the feature — i wrote it for myself because my old todo file had 47 items and i was lying to all of them.
