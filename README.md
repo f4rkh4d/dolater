@@ -55,3 +55,7 @@ python 3.10+, sqlite3 ships with python, tests with pytest. `pip install -e ".[d
 ## license
 
 mit.
+
+## closed issues that were also a no
+
+- [#1](https://github.com/f4rkh4d/dolater/issues/1) someone asked for a `--slots N` flag. three is the product, see above.
